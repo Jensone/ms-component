@@ -1,0 +1,147 @@
+:root {
+    --blue-color: #2A9FF4;
+    --gray-color: #858585;
+    --light-gray-color: #F5F5F5;
+    --dark-gray-color: #505050;
+    --dark-color: #000000;
+    --light-color: #FFFFFF;
+    --gray-color: #909090;
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Global */
+body {
+    background-color: var(--light-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    width: 450px;
+    height: 421px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    background-color: var(--light-color);
+}
+
+.card-image {
+    width: 440px;
+    height: 300px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.card-infos {
+    padding: 1em;
+    font-size: 12px;
+    width: 100%;
+}
+
+.card-author, .card-interactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-author-detail {
+    display: flex;
+    gap: 1em;
+}
+
+.card-author-detail div {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-author-detail div p:nth-child(2) {
+    color: var(--gray-color);
+}
+
+.card-author button {
+    width: 65px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 10px;
+    background: transparent;
+    border: 1px solid var(--gray-color);
+    color: var(--dark-gray-color);
+}
+
+.card-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+hr {
+    margin: 8px 0 8px 0;
+    border: 1px solid var(--light-gray-color);
+}
+
+.interactions {
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+}
+
+.interactions li {
+    width: 20px;
+    height: 20px;
+    background-color: var(--light-gray-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interactions li img {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+}
+
+.interactions li:nth-child(1) {
+    background-color: var(--blue-color);
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.likes div {
+    position: relative;
+    width: 43px;
+    height: 20px;
+}
+
+.likes img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--light-color);
+}
+
+.likes img:nth-child(2) {
+    left: 10px;
+}
+
+.likes img:nth-child(3) {
+    left: 20px;
+}
